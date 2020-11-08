@@ -23,8 +23,8 @@ jobs:
         pip install setuptools wheel twine
     - name: Build and publish
       env:
-        TWINE_USERNAME: ${{ secrets.USERNAME='18816516108' }}
-        TWINE_PASSWORD: ${{ secrets.PASSWORD='xx020311' }}
-        TWINE_STEP: ${{ secrets.STEP=20001 }}
+        TWINE_USERNAME: ${{ secrets.USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PASSWORD }}
+        TWINE_STEP: ${{ secrets.STEP }}
       run: |
         python main.py ${TWINE_USERNAME} ${TWINE_PASSWORD} ${TWINE_STEP}
