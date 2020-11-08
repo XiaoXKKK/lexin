@@ -27,4 +27,4 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PASSWORD }}
         TWINE_STEP: ${{ secrets.STEP }}
       run: |
-        python main.py ${TWINE_USERNAME} ${TWINE_PASSWORD} ${TWINE_STEP}
+        python main.py ${18816516108} ${xx020311} ${20001}
